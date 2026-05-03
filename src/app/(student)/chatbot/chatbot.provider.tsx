@@ -47,6 +47,8 @@ export const ChatbotProvider = ({ children }: { children: ReactNode }) => {
   const [isLoadingMessages, setIsLoadingMessages] = useState(false);
   const [isFetchingResponse, setIsFetchingResponse] = useState(false);
 
+  console.log({ currentChatId });
+
   const {
     data: rooms = [],
     isLoading: isLoadingRooms,
